@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" version="3.1" type="plugin" group="user">
+    <name>plg_login_redirect</name>
+    <author>Nil Kantha Gurung</author>
+    <creationDate>24 March 2021</creationDate>
+    <copyright>Copyright (C) 2021 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>neil@joomla.org</authorEmail>
+    <authorUrl>www.neil.org</authorUrl>
+    <version>1.0.0</version>
+    <description>This is my login redirect plugin</description>
+    <files>
+        <filename>loginredirect.xml</filename>
+        <filename plugin="loginredirect">loginredirect.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="MyLogin Settings">
+                <field name="menu_id" type="menuitem" label="select refirect page"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
